@@ -832,7 +832,7 @@ const int FrontViewPositionNone = 0xff;
                 _frontOverlayView.backgroundColor = [UIColor blackColor];
                 _frontOverlayView.alpha = 0.5;
                 UIButton * overlayButton = [[UIButton alloc] initWithFrame:_frontOverlayView.bounds];
-                [overlayButton addTarget:self action:@selector(revealToggleAnimated:) forControlEvents:UIControlEventTouchUpInside];
+                [overlayButton addTarget:self action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
                 [_frontOverlayView addSubview:overlayButton];
             }
             [self.frontViewController.view addSubview:_frontOverlayView];
